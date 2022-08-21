@@ -1,0 +1,33 @@
+
+
+@font-face {
+  font-family: microextended-regular;
+  src: url('./assets/fonts/microextendflf/MicroExtendFLF.ttf');
+}
+@font-face {
+  font-family: microextended-bold;
+  src: url('./assets/fonts/microextendflf/MicroExtend\ FLF\ Bold.ttf');
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to right bottom, #d76e4f, #ba4b5f, #8d3768, #542e66, #0c2454);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+svg {
+  color: white;
+}
+
+
