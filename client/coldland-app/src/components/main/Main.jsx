@@ -20,7 +20,7 @@ export const Main = () => {
             asperiores amet debitis consequuntur expedita at, unde voluptatem
             laboriosam ducimus, dolorem soluta!
           </p>
-          <button>Shop Now</button>
+          <button className="btn-gradient" style={{textAlign:'left'}}>Shop Now</button>
         </div>
 
         <div className="main-img desktop">

@@ -1,12 +1,10 @@
-
-
 @font-face {
   font-family: microextended-regular;
-  src: url('./assets/fonts/microextendflf/MicroExtendFLF.ttf');
+  src: url("./assets/fonts/microextendflf/MicroExtendFLF.ttf");
 }
 @font-face {
   font-family: microextended-bold;
-  src: url('./assets/fonts/microextendflf/MicroExtend\ FLF\ Bold.ttf');
+  src: url("./assets/fonts/microextendflf/MicroExtend\ FLF\ Bold.ttf");
 }
 
 body {
@@ -14,12 +12,31 @@ body {
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to right bottom, #d76e4f, #ba4b5f, #8d3768, #542e66, #0c2454);
+  background-image: linear-gradient(
+    to right bottom,
+    #d76e4f,
+    #ba4b5f,
+    #8d3768,
+    #542e66,
+    #0c2454
+  );
   background-size: cover;
   background-repeat: no-repeat;
+  height: 10000px;
 }
 
-
+.btn-gradient {
+  background: linear-gradient(to left, #fd746c, #ff9068);
+  border-radius: 10px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  font-weight: 400;
+  border: none;
+  color: white;
+  font-size: 0.8em;
+}
 
 a {
   text-decoration: none;
@@ -30,4 +47,17 @@ svg {
   color: white;
 }
 
+.flex {
+  display: flex;
+}
+.col {
+  flex-direction: column;
+}
+.row {
+  flex-direction: row;
+}
 
+.center {
+  justify-content: center;
+  align-items: center;
+}
