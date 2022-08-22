@@ -1,0 +1,20 @@
+
+.product-detail-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+.product-detail-container .meta-info-card{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    background-color: lightgray;
+}
+
+.product-detail-container .meta-info-card .rating{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}

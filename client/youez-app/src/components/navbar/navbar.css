@@ -1,0 +1,62 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+
+.nav-center{
+    display: none;
+}
+
+.nav-right{
+    display: none;
+}
+
+/*Desktop*/
+@media (min-width: 1024px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+  }
+
+  .nav .logo {
+    width: 5vw;
+   /*  margin-left: 10rem; */
+  }
+
+  .nav .nav-center {
+    display: block;
+    margin-left: 5rem;
+  }
+
+  .nav .nav-center a {
+    margin-right: 3rem;
+    font-size: 1.3rem;
+    background-color: #ff00a6;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 7px;
+
+  }
+
+  .nav .nav-right {
+    display: block;
+    /* margin-right: 10rem; */
+  }
+
+  .nav .nav-right svg {
+    margin-right: 2rem;
+  }
+
+  .mobile-menu{
+    display: none;
+  }
+
+  #search{
+    display: none;
+  }
+}

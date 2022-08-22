@@ -1,0 +1,9 @@
+.banner{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.banner img{
+    width: 100%;
+    object-fit: contain;
+}

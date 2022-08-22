@@ -1,0 +1,76 @@
+@font-face {
+  font-family: poppins-regular;
+  src: url("./assets/fonts/poppins/Poppins-Regular.otf");
+}
+@font-face {
+  font-family: poppins-bold;
+  src: url("./assets/fonts/poppins/Poppins-Bold.otf");
+}
+@font-face {
+  font-family: bariol-bold;
+  src: url("./assets/fonts/Bariol-RegularItalic/Bariol-Regular&Italic/Webfont/Bariol-Regular-Webfont/bariol_regular-webfont.ttf");
+}
+
+:root {
+  --bg: linear-gradient(150deg, #ff0037, #ff4870);
+  --orangy-gradient: linear-gradient(to left, #fd746c, #ff9068);
+}
+
+body {
+  margin: 0;
+  font-family: poppins-regular;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: var(--bg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 10000px;
+}
+
+.btn-gradient {
+  background: linear-gradient(to left, #240fe3, #3420c7);
+  border-radius: 10px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  font-weight: 400;
+  border: none;
+  color: white;
+  font-size: 0.8em;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+svg {
+  color: white;
+}
+
+.flex {
+  display: flex;
+}
+.col {
+  flex-direction: column;
+}
+.row {
+  flex-direction: row;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+--root {
+  --bg: linear-gradient(
+    to right bottom,
+    #d76e4f,
+    #ba4b5f,
+    #8d3768,
+    #542e66,
+    #0c2454
+  );
+}

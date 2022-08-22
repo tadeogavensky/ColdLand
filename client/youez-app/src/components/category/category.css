@@ -1,0 +1,51 @@
+.category-card {
+  margin-right: 0;
+  margin-bottom: 1rem;
+  background-color: #e3f4ec;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  
+}
+
+.category-card h4 {
+  color: black;
+  font-family: poppins-bold;
+  font-size: 1.5rem;
+}
+
+.category-card .image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+@media (min-width: 1024px) {
+  .category-card {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    background: --orangy-gradient;
+    border-radius: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 215px;
+  }
+
+  .category-card h4 {
+    color: black;
+    font-size: 1rem;
+  }
+
+  .category-card .image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid black;
+  }
+}
