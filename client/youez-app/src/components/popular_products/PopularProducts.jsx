@@ -50,7 +50,7 @@ export const PopularProducts = () => {
   return (
     <div className="popular-products">
       <h1>
-        Popular <span style={{ color: "#0C2454" }}> Products </span>
+        Popular <span style={{ color: "black" }}> Products </span>
       </h1>
       <Carousel
         responsive={responsive}

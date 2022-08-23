@@ -12,7 +12,7 @@ export const Main = () => {
       <main className="main">
         <div className="main-left">
           <h1>
-            Winter Collections <span style={{ color: "#0C2454" }}>2022</span>
+            Winter Collections <span style={{ color: "black" }}>2022</span>
           </h1>
           <div className="main-img mobile">
             <img src={airmax} alt="" />

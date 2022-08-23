@@ -5,11 +5,11 @@ import "./categories.css";
 import { Category } from "../category/Category";
 
 
-import { GiCampingTent,GiFireAxe,GiMonclerJacket } from "react-icons/gi";
+import running from "../../assets/img/Nike-Airmax.png"
+import sportwear from "../../assets/img/nike-air-jordan-1-retro-unc.png"
+import croc from "../../assets/img/Imagen-1-removebg-preview.png"
 
-import {BsSnow} from "react-icons/bs"
 
-import {FaHiking} from "react-icons/fa"
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -31,24 +31,16 @@ const responsive = {
 export const Categories = () => {
   const categories = [
     {
-      name: "Camping",
-      icon: <GiCampingTent size={20}/>,
+      name: "Running",
+      shoes: running,
     },
     {
-      name: "Hiking",
-      icon: <FaHiking size={20}/>,
+      name: "Sportwear",
+      shoes: sportwear,
     },
     {
-      name: "Snow",
-      icon: <BsSnow size={20}/>,
-    },
-    {
-      name: "Gear",
-      icon: <GiFireAxe size={20}/>,
-    },
-    {
-      name: "Jackets",
-      icon: <GiMonclerJacket size={20}/>,
+      name: "Crocs",
+      shoes: croc,
     },
   ];
 
@@ -67,7 +59,7 @@ export const Categories = () => {
           {
             categories.map((index, value)=>{
               return(
-                <Category category={index.name} icon={index.icon}/>
+                <Category category={index.name} shoes={index.shoes}/>
               )
             })
           }
