@@ -11,7 +11,7 @@
   padding-left: 2rem;
   padding-right: 2rem;
   cursor:default;
-  
+  transition: all 300ms;
 }
 
 .category-card h4 {
@@ -34,6 +34,20 @@
 .category-card .image img {
  width: 100%;
  object-fit: contain;
+}
+
+
+
+.category-card:hover{
+  background-color: black;
+}
+
+.category-card:hover h4{
+  color: white;
+}
+
+.category-card:hover .image img{
+  transform: rotate(-30deg);
 }
 
 @media (min-width: 1024px) {

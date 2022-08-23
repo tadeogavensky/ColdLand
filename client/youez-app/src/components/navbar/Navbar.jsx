@@ -33,9 +33,9 @@ export const NavBar = () => {
           <FaSearch size={15} />
           <BiCartAlt size={15} />
 
-          <a href="">
-            <button>Shop now</button>
-          </a>
+         
+            <button className="btn-navbar-desktop"> <a href="" >Shop now</a></button>
+          
         </div>
 
         <FaSearch id="search" size={40} />

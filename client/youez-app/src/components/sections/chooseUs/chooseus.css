@@ -1,0 +1,112 @@
+.chooseUs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    font-family: poppins-bold;
+}
+
+.chooseUs-card{
+    display: none;
+    width: 60vw;
+    height: 250px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, rgba(65, 35, 151, 1), rgba(255,144,168,1));
+    margin-right: 0;
+    padding: 1rem;
+    z-index: -1;
+}
+
+.chooseUs-card::after{
+    content: "";
+   
+}
+
+.chooseUs-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: rotate(60deg);
+}
+
+
+
+.chooseUs-text h1{
+   margin: 0;
+   color: white;
+}
+
+.chooseUs-text p{
+    color: black;
+ }
+
+
+ .chooseUs-text button{
+    color: black;
+    font-family: poppins-bold;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 8px;
+  }
+
+  .chooseUs-text button:hover{
+    background-color: black;
+  }
+
+  .chooseUs-text button:hover{
+    color: white;
+  }
+
+.chooseUs-text img{
+    width: 90vw;
+}
+
+
+@media (min-width: 1024px) {
+    .chooseUs{
+        flex-direction: row;
+    }
+
+    .chooseUs-card{
+        margin-right: 10rem;
+        display: block;
+    }
+
+    .chooseUs-card::after{
+        content: "Get yours now, up to 30% OFF";
+        color: white;
+        display: flex;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: -1;
+        width: 140px;
+        height: 140px;
+        top: 202vh;
+        right: 63vw;
+        backdrop-filter: blur(19px) saturate(200%);
+        -webkit-backdrop-filter: blur(19px) saturate(200%);
+        background-color: rgba(27, 39, 61, 0.26);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.125);
+    }
+
+
+    .chooseUs-text img{
+        display: none;
+    }
+
+    
+.chooseUs-text h1{
+    margin: 0;
+    color: black;
+ }
+ 
+ .chooseUs-text p{
+     color: white;
+  }
+ 
+    
+}

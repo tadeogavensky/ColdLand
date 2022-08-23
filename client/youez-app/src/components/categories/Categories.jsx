@@ -5,9 +5,15 @@ import "./categories.css";
 import { Category } from "../category/Category";
 
 
-import running from "../../assets/img/Nike-Airmax.png"
+import running from "../../assets/img/running.png"
 import sportwear from "../../assets/img/nike-air-jordan-1-retro-unc.png"
 import croc from "../../assets/img/Imagen-1-removebg-preview.png"
+import football from "../../assets/img/football-boot.png"
+import sneaker from "../../assets/img/sneaker.png"
+import exclusive from "../../assets/img/exclusive.png"
+
+
+
 
 
 
@@ -31,17 +37,26 @@ const responsive = {
 export const Categories = () => {
   const categories = [
     {
-      name: "Running",
-      shoes: running,
+      name: "Lifestyle",
+      shoes: sneaker,
     },
     {
-      name: "Sportwear",
-      shoes: sportwear,
+      name: "Sports",
+      shoes: football,
     },
     {
-      name: "Crocs",
+      name: "Flip Flops",
       shoes: croc,
     },
+    {
+      name: "Exclusive",
+      shoes: exclusive,
+    },
+    {
+      name: "Jordan",
+      shoes: sportwear,
+    },
+   
   ];
 
 

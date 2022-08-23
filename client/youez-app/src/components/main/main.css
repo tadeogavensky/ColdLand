@@ -5,25 +5,49 @@
   padding-bottom: 3rem;
 }
 
-.main .main-img.desktop{
+.main .main-img.desktop {
   display: none;
 }
 
-.main .main-img.mobile{
+.main .main-img.mobile {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   transform: rotate(0deg);
 }
 
-.main .main-img.mobile img{
- width: 100vw;
+.main .main-img.mobile::after{
+  content: "dddd";
+  color: transparent;
+  background: linear-gradient(91.9deg, #f4a261 27.8%, #e76f51 67%); 
+  border-radius: 12px;
+  position: absolute;
+  z-index: -1;
+  width: 250px;
+  height: 250px;
+  top: 4rem;
+  right: 2.2rem;
+  transform: rotate(-40deg);
 }
 
-.main .main-left{
+.main .main-img.mobile img {
+  width: 100vw;
+  animation: mover 2s infinite alternate;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.main .main-left {
   color: white;
 }
 
-.main .main-left h1{
+.main .main-left h1 {
   font-family: poppins-bold;
   font-size: 2.2rem;
   word-wrap: break-word;
@@ -31,13 +55,12 @@
   margin-bottom: 0;
 }
 
-.main .main-left p{
+.main .main-left p {
   word-wrap: break-word;
   width: 100%;
-
 }
 
-.main .main-left button{
+.main .main-left button {
   width: 100%;
 }
 
@@ -46,46 +69,60 @@
     flex-direction: row;
   }
 
-  .main .main-left h1{
+  .main .main-left h1 {
     font-family: poppins-bold;
     font-size: 3rem;
     word-wrap: break-word;
     width: 30rem;
   }
 
-  .main .main-left p{
+  .main .main-left p {
     word-wrap: break-word;
     width: 30rem;
-
   }
 
-  .main .main-left button{
+  .main .main-left button {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 40%;
   }
 
-  .main .main-img{
+  .main .main-img {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
-  .main .main-img img{
+
+  .main .main-img img {
     object-fit: cover;
     width: 70%;
+    animation: mover 2s infinite alternate;
   }
 
+ 
 
-  .main .main-img.desktop{
+  .main .main-img.desktop {
     display: flex;
     justify-content: center;
     transform: rotate(-10deg);
   }
-  
 
-  .main .main-img.mobile{
+  .main .main-img.desktop::after{
+    content: "dddd";
+    color: transparent;
+    background: linear-gradient(91.9deg, #f4a261 27.8%, #e76f51 67%); 
+    border-radius: 12px;
+    position: absolute;
+    z-index: -1;
+    width: 250px;
+    height: 250px;
+    top: 100px;
+    right: 140px;
+    transform: rotate(-40deg);
+  }
+
+  .main .main-img.mobile {
     display: none;
   }
 }
